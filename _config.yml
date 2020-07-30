@@ -19,8 +19,7 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, I am Vedant, currently studying Electronics Engineering at Veermata Jijabai Technological Institute, Mumbai. 
   I have a keen interest in Embedded systems, and Robotics.   
 
-  I am well versed in: <mark>C</mark>, <mark>C++</mark>, <mark>Python</mark>, <mark>Linux</mark> and <mark>Watching Movies</mark> :)
-
+  I am well versed in: <mark>C</mark>, <mark>C++</mark>, <mark>Python</mark>, <mark>Linux</mark> :)
 # Footer
 footer_show_references: true
 
