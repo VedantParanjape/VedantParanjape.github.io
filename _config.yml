@@ -16,7 +16,7 @@ linkedin_username: vedantp16
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I am Vedant, currently studying Electronics Engineering at Veermata Jijabai Technological Institute, Mumbai. 
+  Hi, I am Vedant, currently studying Electronics Engineering at VJTI, Mumbai. 
   I have a keen interest in Embedded systems, and Robotics.   
 
   I am well versed in: <mark>C</mark>, <mark>C++</mark>, <mark>Python</mark>, <mark>Linux</mark> :)
