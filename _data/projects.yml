@@ -1,0 +1,59 @@
+- layout: top-middle
+  name: simpPRU
+  link: https://github.com/VedantParanjape/simpPRU
+  github: https://github.com/VedantParanjape/simpPRU
+  quote: >
+    Intuitive language for PRU which compiles down to PRU C.
+  description: | # this will include new lines to allow paragraphs
+    The <mark>PRU</mark> is a dual core micro-controller system present on the AM335x SoC which powers the BeagleBone. It is meant to be used for high speed jitter free IO control.
+    Being independent from the linux scheduler and having direct access to the IO pins of the BeagleBone Black, the PRU is ideal for offloading IO intensive tasks.
+
+    Programming the <mark>PRU</mark> is a uphill task for a beginner, since it involves several steps, writing the firmware for the PRU, writing a loader program. This can be a easy task for a experienced developer, but it keeps many creative developers away. 
+    This can be achieved by implementing a language on top of PRU C. It will directly compile down to PRU C. This could also be solved by implementing a bytecode engine on the PRU, but this will result in waste of already limited resources on PRU. 
+    With this approach, both PRU cores can be run independent of each other.
+
+- layout: top-middle
+  name: ESP32 WiFi Logger
+  link: https://github.com/VedantParanjape/esp-wifi-logger
+  github: https://github.com/VedantParanjape/esp-wifi-logger
+  quote: >
+    ESP32 WiFi logger - Log messages over WiFi, using either TCP, UDP or Websockets
+  description:
+    <mark>ESP32</mark> is cheap microcontroller with WiFi, It has a dual core processor clocked at 160Mhz. This is a ESP-IDF component which can logs system generated log messages and normal log messages,
+    over WiFi, using either UDP, TCP, or Websockets. This is user-configurable using menuconfig. Follows ESP-IDF log color pattern for different log levels.
+
+- layout: top-middle
+  name: Synchronous Music Player
+  link: https://github.com/VedantParanjape/audio-streamer
+  github: https://github.com/VedantParanjape/audio-streamer
+  description:
+    A <mark>C++</mark> based application which plays a audio file in a <mark>synchronous manner</mark> on various connected client devices to boost the overall audio output.
+    It Uses <mark>Boost.Asio</mark> for networking and <mark>Boost.Thread</mark> for multi threading. Files are sent over <mark>TCP</mark>, and control signals are broadcasted over <mark>UDP</mark>
+    This is a multithreaded synchronous server, which uses Boost.Thread, and Boost.Asio to create a cross-platform app, instead of using OS specific networking API.
+
+- layout: top-middle
+  name: Console Chat app
+  link: https://github.com/VedantParanjape/Chat-Server-and-Client
+  github: https://github.com/VedantParanjape/Chat-Server-and-Client
+  quote: >
+    Instant messengers have become a daily part of our life. We cannot imagine a life without Whatsapp, Telegram, Hike, etc. I was always curious about their working, so I spent some time and learnt about their theory of implementation. 
+    Equipped with the right knowledge I have created a very basic implementation of instant messengers
+  description:
+    Implemented a command line chat app using <mark>Windows Networking API</mark> and <mark>WinSOCK</mark>. Uses TCP Sockets to transmit data between connected clients. Server has a multithreaded architecture, thus can handle multiple clients at the same time.
+    It uses <mark>pthread</mark> to implement a synchronous TCP server.
+
+- layout: top-middle
+  name: ASK Demodulator using SDR
+  link: https://github.com/VedantParanjape/sdr-demodulator
+  github: https://github.com/VedantParanjape/sdr-demodulator
+  description:
+    Implemented <mark>Amplitude Shift Keying(ASK)</mark> demodulator using <mark>rtl-sdr(software defined radio)</mark> to captures rf data samples transmitted by a 434 Mhz module. Transmitted data follows UART data packaging scheme, it is then encoded by 434 Mhz RF Transmitter module. 
+    It shows a amplitude vs time plot for recieved data, with a normalised graph.
+
+- layout: top-middle
+  name: PID Plotter for ESP32
+  link: https://github.com/VedantParanjape/pid-tuning-gui
+  github: https://github.com/VedantParanjape/pid-tuning-gui
+  description:
+    Custom GUI app to plot and set PID values and pid constants, pid control loop running on a ESP32. 
+    Created a ESP-IDF component to push and receive pid data.

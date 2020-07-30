@@ -1,0 +1,35 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+darkmode: true
+
+# Personal info
+name: Vedant Paranjape
+title: Electronics Engineering student
+website: https://ve0x10.me/
+
+# Social links
+github_username:  vedantparanjape
+linkedin_username: vedantp16
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Vedant and I'm currently studying Electronics Engineering at Veermata Jijabai Technological Institute, Mumbai. 
+  I have a keen interest in Embedded systems, and Robotics.   
+
+  I am most skilled in: <mark>C++</mark> and <mark>Watching Movies</mark>
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

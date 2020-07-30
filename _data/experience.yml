@@ -1,0 +1,24 @@
+- layout: left
+  company: BeagleBoard.org
+  link: beagleboard.org
+  job_title: Open Source Developer
+  dates: June 2020 - Present
+  quote: >
+   Selected through Google Summer of Code 2020
+  description: | # this will include new lines to allow paragraphs
+    Built a <mark>statically typed, compiled language</mark> called <mark>simpPRU</mark> for TI's am335x PRU(programmable real time unit). 
+    Used <mark>bison, flex</mark> to create parser and lexer, then converted code down to C, rather than ASM, because pru-gcc toolchain is quite mature.
+    
+    simpPRU has a syntax similar to python, thus making it easier for a beginner to start coding for the <mark>PRU</mark>, which usually involves in depth knowledge of Linux API's and low level register manipulation. 
+    
+    Extensively used <mark>Linux Kernel's Remoteproc framework</mark>
+    Distributed it through <mark>Debian packages</mark>, and setup CI/CD using <mark>docker and github actions</mark> to automate build and release process.
+
+- layout: left
+  company: Acuradyne
+  job_title: Intern
+  dates: July 2019 - September 2019
+  description: |  
+    Built TCP network stack for IoT Devices, increased efficiency by 30%
+    
+    Implemented Synchronous TCP server using Boost.Asio(C++) and Boost.Thread(C++). Implemented a tool to calculate round trip time(RTT) of tcp packets
