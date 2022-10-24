@@ -150,27 +150,29 @@ github: [metadata]
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
-# scholar:
+scholar:
 
-#   last_name: Einstein
-#   first_name: [Albert, A.]
+  last_name: Paranjape
+  first_name: [Vedant]
 
-#   style: apa
-#   locale: en
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
 
-#   source: /_bibliography/
-#   bibliography: papers.bib
-#   bibliography_template: bib
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: publication
+  reference_tagname: div
 
-#   replace_strings: true
-#   join_strings: true
-#   bibtex_filters:
+  replace_strings: true
+  join_strings: true
 
-#   details_dir: bibliography
-#   details_layout: bibtex.html
-#   details_link: Details
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
 
-#   query: "@*"
+  query: "@*"
 
 # -----------------------------------------------------------------------------
 # Optional Features
