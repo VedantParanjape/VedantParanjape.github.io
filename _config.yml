@@ -151,9 +151,8 @@ github: [metadata]
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: Paranjape
-  first_name: [Vedant]
+  first_name: ["Vedant"]
 
   style: apa
   locale: en
