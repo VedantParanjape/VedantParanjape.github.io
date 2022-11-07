@@ -11,7 +11,7 @@
   Vedant  Paranjape
 
 
-  | blog
+  | USB-UART adapter for kimchi-micro
 
 </title>
 <meta name="description" content="Portfolio and blog for Vedant Paranjape.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/6_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,18 +101,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -172,54 +168,30 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>ve0x10</h1>
-    <h2>A collection of my thoughts and ideas</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">USB-UART adapter for kimchi-micro</h1>
+    <p class="post-description">UART adapter for the kimichi micro SBC by GroupGets</p>
+  </header>
 
+  <article>
+    <p>Designed an usb to uart adapter for <a href="https://groupgets.com/manufacturers/getlab/products/kimchi-micro">kimch-micro</a>, which is an open hardware single board computer for the NXP i.MX8M Mini application processor.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2022/running-parsec-benchmark/">Bringing up the parsec-3.0 benchmark</a></h3>
-        <p class="post-meta">February 25, 2022</p>
-        <p>The parsec benchmark doesn't seem to work out of the box and needs few changes, this post describes those</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/gsoc-libcamera/">Midway through Google Summer of Code 21 with libcamera</a></h3>
-        <p class="post-meta">July 19, 2021</p>
-        <p>This is a writeup describing my experience uptil now working with libcamera</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/libcamera-log-2/">Making a simple camera streamer with libcamera</a></h3>
-        <p class="post-meta">April 4, 2021</p>
-        <p>This is a log for documenting issues/observations encountered while creating an Qt app with libcamera</p>
-      </li>
-    
-  </ul>
+<p>Salient Features:</p>
+<ul>
+  <li>Designed using open source EDA tool, KiCad</li>
+  <li>Uses FT230XS, which has a 1.8v/3.3v logic level voltage selection option, this can be configured through a solder jumper.</li>
+  <li>Fit in a very small footprint of <code class="language-plaintext highlighter-rouge">20mm x 40mm</code></li>
+</ul>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<h2 id="renders">Renders</h2>
 
+<h3 id="adapter">Adapter</h3>
+<p align="center"><img class="img-fluid rounded z-depth-1" src="/assets/img/kimchi-uart-adapter.png" /></p>
 
+<h3 id="kimchi-micro">kimchi-micro</h3>
+<p align="center"><img class="img-fluid rounded z-depth-1" src="https://labs.groupgets.com/kimchi-micro/images/kimchi-front.jpg" /></p>
+
+  </article>
 
 </div>
 

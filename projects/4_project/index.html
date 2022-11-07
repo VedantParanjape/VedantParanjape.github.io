@@ -11,7 +11,7 @@
   Vedant  Paranjape
 
 
-  | blog
+  | Synchronous Music Player
 
 </title>
 <meta name="description" content="Portfolio and blog for Vedant Paranjape.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/4_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,18 +101,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -172,54 +168,41 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>ve0x10</h1>
-    <h2>A collection of my thoughts and ideas</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Synchronous Music Player</h1>
+    <p class="post-description">A sync audio player using Boost.Asio and Boost.Thread</p>
+  </header>
 
+  <article>
+    <p>A synchronous audio player, play time synced audio across multiple devices connected through LAN. Build on top of Boost.Asio.
+Uses a TCP server to transfer audio files on connection and a UDP server to control devices.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2022/running-parsec-benchmark/">Bringing up the parsec-3.0 benchmark</a></h3>
-        <p class="post-meta">February 25, 2022</p>
-        <p>The parsec benchmark doesn't seem to work out of the box and needs few changes, this post describes those</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/gsoc-libcamera/">Midway through Google Summer of Code 21 with libcamera</a></h3>
-        <p class="post-meta">July 19, 2021</p>
-        <p>This is a writeup describing my experience uptil now working with libcamera</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/libcamera-log-2/">Making a simple camera streamer with libcamera</a></h3>
-        <p class="post-meta">April 4, 2021</p>
-        <p>This is a log for documenting issues/observations encountered while creating an Qt app with libcamera</p>
-      </li>
-    
-  </ul>
+<h2 id="dependencies">dependencies</h2>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p><code class="language-plaintext highlighter-rouge">boost-1.65(tested only on version 1.65)</code><br />
+<code class="language-plaintext highlighter-rouge">pyglet</code><br />
+<code class="language-plaintext highlighter-rouge">libavbin</code><br />
+<code class="language-plaintext highlighter-rouge">picoSHA2</code></p>
 
+<h2 id="compile-instructions">compile instructions</h2>
 
+<p><code class="language-plaintext highlighter-rouge">cd build</code><br />
+<code class="language-plaintext highlighter-rouge">cmake ..</code><br />
+<code class="language-plaintext highlighter-rouge">make</code></p>
+
+<p>the program binaries are generated in /build</p>
+<h2 id="usage">usage</h2>
+
+<p><code class="language-plaintext highlighter-rouge">./server [filename]</code></p>
+
+<p>enter a mp3 file to be played</p>
+
+<p><code class="language-plaintext highlighter-rouge">./client [server IP] [server PORT]</code></p>
+
+<p>for local configuration IP: 127.0.0.1 PORT: 9292
+type “play” and press enter twice in the server console to start playing audio on all clients once all of them are connected and file is transferred</p>
+
+  </article>
 
 </div>
 
